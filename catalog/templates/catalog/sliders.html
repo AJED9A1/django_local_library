@@ -1,0 +1,15 @@
+{% extends "base_generic.html"%}
+
+{% block content %}
+{{script | safe}}
+
+<body>
+  <button id="cbtnA" type="button" name="button" onclick="displayGraphA()">Btn</button>
+  <button id="cbtnB" type="button" name="button" onclick="displayGraphB()">Btn2</button>
+
+  <div id="contentA" style="display: none;"><p>No.1</p>{{ div | safe }}</div>
+  <div id="contentB" style="display: none;"><p>No.2</p></div>
+
+  <br>
+</body>
+{% endblock %}
